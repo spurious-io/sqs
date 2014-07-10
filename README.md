@@ -1,7 +1,7 @@
 # Docker Fake SQS
 
- * Source: https://github.com/bbc-news/docker-fake-sqs
- * Website: https://github.com/bbc-news/docker-fake-sqs
+ * Source: https://github.com/stevenjack/docker-fake-sqs
+ * Website: https://github.com/stevenjack/docker-fake-sqs
 
 This creates a [Docker](http://docker.io) container for running the [fake-sqs](https://github.com/iain/fake_sqs) gem.
 
@@ -53,4 +53,4 @@ If you want to add functionality to this project, pull requests are welcome.
 
 Docker nginx is © 2014 BBC News. It is free software and may be redistributed under the terms
 specified in the
-[LICENCE](https://github.com/bbc-news/docker-fake-sqs/tree/master/LICENCE) file.
+[LICENCE](https://github.com/stevenjack/docker-fake-sqs/tree/master/LICENCE) file.
