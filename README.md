@@ -1,4 +1,4 @@
-# Docker Fake SQS
+# Spurious SQS
 
  * Source: https://github.com/stevenjack/docker-fake-sqs
  * Website: https://github.com/stevenjack/docker-fake-sqs
@@ -8,7 +8,7 @@ This creates a [Docker](http://docker.io) container for running the [fake-sqs](h
 
 ## Installation
 
-Clone this repo and run: `docker build -t <yourname>/fake-sqs .`, this should build
+Clone this repo and run: `docker build -t <yourname>/spurious-sqs .`, this should build
 the required container for running a fake sqs endpoint within Docker.
 
 
@@ -16,7 +16,7 @@ the required container for running a fake sqs endpoint within Docker.
 
 The easiest way to use this container is to use the public image from the docker index:
 
-`docker run -d -p 4568:4568 bbcnews/fake-sqs`
+`docker run -d -p 4568:4568 smaj/spurious-sqs`
 
 This is will damonize the container than expose the endpoint to your local machine (Or VM if you're running on OSX).
 
@@ -25,11 +25,11 @@ This is will damonize the container than expose the endpoint to your local machi
 By default the database file is stored in `/var/data/fake_sqs`, if you'd like to get hold of this just mount it when you run the container:
 
 
-`docker run -d -p 4568:4568 -v /host/dir:/var/data/fake_sqs bbcnews/fake-sqs`
+`docker run -d -p 4568:4568 -v /host/dir:/var/data/fake_sqs smaj/spurious-sqs`
 
 
 
-If you've built the image locally then you can run the resulting image fairly easily with: `docker run -t -i <yourname>/fake-sqs`
+If you've built the image locally then you can run the resulting image fairly easily with: `docker run -t -i <yourname>/spurious-sqs`
 
 
 ## Contributing
@@ -51,6 +51,5 @@ If you want to add functionality to this project, pull requests are welcome.
 
  * [@stevenjack85](https://twitter.com/stevenjack85)
 
-Docker nginx is © 2014 BBC News. It is free software and may be redistributed under the terms
-specified in the
-[LICENCE](https://github.com/stevenjack/docker-fake-sqs/tree/master/LICENCE) file.
+It is free software and may be redistributed under the terms specified in the
+[LICENCE](https://github.com/stevenjack/spurious/tree/master/LICENCE) file.
