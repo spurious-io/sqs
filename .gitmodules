@@ -1,0 +1,3 @@
+[submodule "fake_sqs"]
+	path = fake_sqs
+	url = git@github.com:stevenjack/fake_sqs.git
