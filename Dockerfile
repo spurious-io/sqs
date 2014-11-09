@@ -1,13 +1,13 @@
-FROM stackbrew/ubuntu:saucy
+FROM ruby:2.1.4
 MAINTAINER Steven Jack <stevenmajack@gmail.com>
 
-RUN apt-get -y update
-RUN apt-get install ruby ruby-dev make gcc+ build-essential git -y
 RUN mkdir -p /var/data/fake-sqs
+RUN bundle config --global frozen 1
 
-ADD fake_sqs /fake_sqs
-WORKDIR /fake_sqs
-RUN gem install bundler
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+ADD ./fake_sqs /usr/src/app
 RUN bundle install
 
 EXPOSE 4568
